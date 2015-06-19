@@ -1,7 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 
-stopwords = [line.strip() for line in open('../stopwords.txt')]
+stopwords = [line.strip() for line in open('../data/stopwords.txt')]
 
 def train(model, body, tag):
     labels, texts = unzip(read_texts())
